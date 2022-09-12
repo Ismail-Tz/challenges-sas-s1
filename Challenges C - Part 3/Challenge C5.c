@@ -4,18 +4,20 @@
 
 int main(){
 
-    char digits[15], invDigits[15];
+    char digits[15]={ NULL }, invDigits[15] = { NULL };
     int i,j=0;
 
     printf("Enter a number:");
     scanf("%s", &digits);
 
-    int len = strlen(digits);
+    int len = strlen(digits); //strlen() returns the size of the array inside ()
+
+
     for (i=len-1 ; i>=0 ; i--){
         invDigits[j] = digits[i];
-        printf("%s",invDigits);
         j++;
     };
+
 
     printf("%s", invDigits);
 
