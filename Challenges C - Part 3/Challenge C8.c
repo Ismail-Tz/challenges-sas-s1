@@ -6,7 +6,7 @@ int main() {
 
     double n,a=-15,b=-10,m;
 
-    for (n=0;n<3;n++){
+    while ( b-a > 0.00001){
         m = (a+b)/2;
         double fa = pow(a,3)+12*pow(a,2)+1;
         double fb = pow(b,3)+12*pow(b,2)+1;
